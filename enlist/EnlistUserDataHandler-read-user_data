@@ -2,7 +2,7 @@
 
 rsyslog:
    remotes:
-     maas: "172.23.48.10:514"
+     maas: "xxx.xx.xx.xx:514"
 
 power_state:
    delay: now
@@ -1002,7 +1002,7 @@ misc_bucket:
 
    # we could obtain the interface that booted from the kernel cmdline
    # thanks to \'IPAPPEND\' (http://www.syslinux.org/wiki/index.php/SYSLINUX)
-   url="http://172.23.48.10:5240/MAAS/api/2.0/machines/"
+   url="http://xxx.xx.xx.xx:5240/MAAS/api/2.0/machines/"
 
    # Early check to see if this machine already exists in MAAS. Already
    # existing machines just stop running and power off. We do not want to
@@ -1092,13 +1092,13 @@ apt:
     uri: http://archive.ubuntu.com/ubuntu
   - arches: [default]
     uri: http://ports.ubuntu.com/ubuntu-ports
-  proxy: http://10.122.49.205:3128
+  proxy: http://xx.xxx.xx.xxx:3128
   security:
   - arches: [amd64, i386]
     uri: http://archive.ubuntu.com/ubuntu
   - arches: [default]
     uri: http://ports.ubuntu.com/ubuntu-ports
-apt_proxy: http://10.122.49.205:3128
+apt_proxy: http://xx.xxx.xx.xxx:3128
 system_info:
   package_mirrors:
   - arches: [i386, amd64]
